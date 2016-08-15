@@ -1,4 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+}
 body {
+  width: 100%;
   font-size: 14px;
   line-height: 26px;
   color: #414141;
@@ -18,4 +23,133 @@ h2 {
   color: #000000;
   font-weight: bold;
   font-family: PT Sans Bold;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  width: 1200px;
+  display: flex;
+}
+nav {
+  width: 1200px;
+  display: flex;
+}
+section {
+  width: 1200px;
+  display: flex;
+}
+article {
+  width: 1200px;
+  display: flex;
+}
+footer {
+  width: 1200px;
+  display: flex;
+}
+.navigation-item {
+display: flex;
+  width: 240px;
+  justify-content: center;
+}
+.navigation-item:nth-child(2) {
+  margin-right: 240px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  left:50%;
+  top: 0;
+}
+.decor {
+justify-content: center;
+}
+.main_heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.avantages_item {
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+}
+.avantages_img {
+  display: flex;
+  width: 800px;
+  margin-right: auto;
+}
+.features {
+  display: flex;
+  text-align: center;
+}
+.features_item {
+  margin: 0 auto;
+}
+.search_for_hotels {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.map input {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+.select_items {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  margin:  auto 0;
+}
+.select_items:first-child {
+  display: flex;
+  margin-left: 72px;
+  background: #5fadf6;
+}
+.cost {
+  display: flex;
+  width: 528px;
+  margin-right: 72px;
+}
+.searching_results {
+  display: flex;
+}
+.sort {
+  display: flex;
+}
+.scrolling {
+  display: flex;
+  margin-right: 72px;
+}
+
+.hotel_img {
+  display: flex;
+  align-items: center;
+  width: 165px;
+  margin-left: 72px;
+}
+.hotel_descript {
+  display: flex;
+  justify-content: flex-start;
+  width: 781px;
+}
+
+.rating {
+  display:flex;
+  width: 110px;
+  margin-right: 72px;
 }
