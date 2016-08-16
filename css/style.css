@@ -209,7 +209,6 @@ label {
 .scrolling {
   display: flex;
   width: 110px;
-  flex-wrap: nowrap;
   margin-right: 72px;
 }
 .scrolling li {
@@ -238,6 +237,7 @@ flex-direction: column;
 }
 .rating {
   display:flex;
+  flex-direction: column;
   width: 110px;
   margin-right: 72px;
 }
