@@ -324,7 +324,7 @@ margin: 30px 0 30px 72px;
   flex-wrap: wrap;
   width: 781px;
   padding-top: 10px;
-  padding-bottom: 28px;
+padding-bottom: 28px;
 }
 .hotel_descript h1 {
   width: 100%;
@@ -338,7 +338,6 @@ margin: 30px 0 30px 72px;
 }
 .distribution span {
   color: #333333;
-  margin-top: 0;
   padding-bottom: 8px;
 
 }
@@ -346,6 +345,7 @@ margin: 30px 0 30px 72px;
   color: #ffffff;
   padding: 2px 11px 2px 11px;
   margin-right: 6px;
+  margin-bottom: 0px;
 }
 .more a {
   border: 1px solid #81b3d2;
@@ -363,7 +363,7 @@ margin: 30px 0 30px 72px;
   margin-right: 72px;
 }
 .rating img {
-
+padding-top: 25px;
 }
 .rating span {
   text-transform: uppercase;
@@ -373,5 +373,5 @@ margin: 30px 0 30px 72px;
   border: 1px solid #f2f2f2;
   background: #f2f2f2;
   padding: 2px 7px 2px 7px;
-  margin-top: 65px;
+  margin-top: 42px;
 }
