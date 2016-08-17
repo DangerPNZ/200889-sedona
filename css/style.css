@@ -35,9 +35,10 @@ a {
 .decor {
   flex-direction: column;
   background-image: url(../img/background_photo.jpg);
+  background-position: 50% 21%;
 }
 .decor img:first-child {
-  margin: 77px auto auto;
+  margin: 75px auto 22px auto;
 }
 .main_heading p {
   text-transform: uppercase;
@@ -110,6 +111,7 @@ ul {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
+
 }
 .navigation-item:nth-child(2) {
   margin-right: 240px;
@@ -125,6 +127,12 @@ ul {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+.main_heading h2 {
+  padding: 42px 330px 0;
+}
+.main_heading p {
+  padding-bottom: 35px;
 }
 .lightblue {
   background-color: #81b3d2;
@@ -149,6 +157,13 @@ ul {
   font-size: 14px;
   line-height: 21px;
 }
+.avantages_item h2 {
+  padding: 0 110px;
+}
+.avantages_item p {
+  padding: 0 32px;
+}
+
 .avantages_img {
   display: flex;
   width: 800px;
@@ -165,6 +180,12 @@ ul {
   margin: 0 auto;
   color: #333333;
 }
+.features_item p {
+  padding: 0 35px 70px;
+}
+.lightgray .avantages_item {
+  padding: 30px 0 50px;
+}
 
 .criteria {
   background-image: url("../img/hotel_filter_back.png");
@@ -178,12 +199,15 @@ ul {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 24px;
+  padding-top: 30px;
 }
 .search_for_hotels p {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
+  margin-top: 0px;
+  padding: 0 350px 33px 350px;
 }
 .search_for_hotels a {
   text-transform: uppercase;
@@ -193,8 +217,8 @@ ul {
   border: 1px solid #766357;
   background: #766357;
   margin: 0px 316px 0px 316px;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 .select_items {
   width: 264px;
