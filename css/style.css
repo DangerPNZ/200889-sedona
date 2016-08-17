@@ -11,6 +11,7 @@ body {
   font-family: PT Sans Regular;
   text-transform: uppercase;
   color: #333333;
+  background-color: #f2f2f2;
 }
 h1 {
   font-size: 21px;
@@ -69,6 +70,8 @@ article {
 footer {
   width: 1200px;
   display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 form {
   display: flex;
@@ -184,11 +187,7 @@ ul {
   padding: 0 35px 70px;
 }
 .lightgray .avantages_item {
-  padding: 30px 0 50px;
-}
-
-.criteria {
-  background-image: url("../img/hotel_filter_back.png");
+  padding: 26px 0 56px;
 }
 .search_for_hotels {
   display: flex;
@@ -220,6 +219,15 @@ ul {
   padding-top: 28px;
   padding-bottom: 28px;
 }
+.map {
+  background-image: url("../img/map.jpg");
+  padding-bottom: 452px;
+}
+
+.criteria {
+  background-image: url("../img/hotel_filter_back.png");
+  padding-bottom: 92px;
+  }
 .select_items {
   width: 264px;
 }
@@ -231,6 +239,8 @@ ul {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  padding-top: 12px;
+  padding-right: 2px;
 }
 .select_items label {
   text-transform: uppercase;
@@ -241,18 +251,28 @@ ul {
 .cost {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  ;
   flex-wrap: wrap;
   width: 528px;
   margin-right: 72px;
+  margin-left: 200px;
 }
 .cost h2 {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 21px;
+  justify-content: center;
+  align-items: center;;
+  margin-top: 25px;
   color: #ffffff;
+}
+.cost input {
+  margin-left: 20px;
+  width: 300px;
+}
+.cost input[type="submit"] {
+  width: 95px;
+  margin-top: 10px;
+  margin-left: 123px;
 }
 .sorting {
   border-bottom: 1px solid #e5e5e5;
@@ -261,7 +281,7 @@ ul {
   display: flex;
   align-items: center;
   width: 165px;
-  margin-left: 72px;
+  margin: 30px 0 30px 72px;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
@@ -297,12 +317,14 @@ ul {
   display: flex;
   align-items: center;
   width: 165px;
-  margin-left: 72px;
+margin: 30px 0 30px 72px;
 }
 .hotel_descript {
   display: flex;
   flex-wrap: wrap;
   width: 781px;
+  padding-top: 10px;
+  padding-bottom: 28px;
 }
 .hotel_descript h1 {
   width: 100%;
@@ -316,10 +338,14 @@ ul {
 }
 .distribution span {
   color: #333333;
+  margin-top: 0;
+  padding-bottom: 8px;
+
 }
 .distribution a {
   color: #ffffff;
-  padding: 6px 16px 6px 16px;
+  padding: 2px 11px 2px 11px;
+  margin-right: 6px;
 }
 .more a {
   border: 1px solid #81b3d2;
@@ -346,5 +372,6 @@ ul {
   color: #666666;
   border: 1px solid #f2f2f2;
   background: #f2f2f2;
-  padding: 4px 7px 4px 7px;
+  padding: 2px 7px 2px 7px;
+  margin-top: 65px;
 }
