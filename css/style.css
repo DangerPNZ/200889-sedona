@@ -7,8 +7,8 @@ body {
   width: 100%;
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal;
-  font-family: PT Sans Regular;
+  font-weight: 400;
+  font-family: 'PT Sans';
   text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
@@ -17,16 +17,16 @@ h1 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  font-weight: bold;
-  font-family: PT Sans Bold;
+  font-weight: 700;
+  font-family: 'PT Sans';
   text-transform: uppercase;
 }
 h2 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  font-weight: bold;
-  font-family: PT Sans Bold;
+  font-weight: 700;
+  font-family: "PT Sans";
   text-transform: uppercase;
 }
 a {
@@ -48,6 +48,7 @@ a {
   color: #333333;
 }
 .container {
+  position:relative;
   width: 1200px;
   margin: 0 auto;
 }
@@ -58,7 +59,6 @@ header {
 nav {
   width: 1200px;
   display: flex;
-  position: relative;
 }
 section {
   width: 1200px;
@@ -205,20 +205,21 @@ ul {
   min-width: 50%;
   margin-left: 8px;
   padding: 6px 0;
+  padding-left: 15px;
   background: #f2f2f2;
   border: #f2f2f2;
 }
 .search_for_hotels input[type="submit"] {
   width: 458px;
   padding-left: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 13px;
   color: #ffffff;
   background: #81b3d2;
   border: 1px solid #81b3d2;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 55px;
+  margin-top: 54px;
 }
 .search_for_hotels .short {
   width: 115px;
@@ -226,12 +227,12 @@ ul {
 }
 .search_for_hotels form {
   position:absolute;
-  left: 593px;
   top: 2052px;
+  left: 316px;
   display:flex;
   flex-direction: column;
   align-items: flex-end;
-  border: 1px solid red;
+  border: 1px solid #ffffff;
   width: 568px;
   padding: 55px;
   background: #ffffff;
@@ -265,7 +266,7 @@ ul {
   margin-right: 231px;
 }
 .label_short2 {
-  margin-top: -35px;
+  margin-top: -37px;
 }
 .long {
   margin-bottom: 29px;
@@ -273,7 +274,7 @@ ul {
 }
 .map {
   background-image: url("../img/map.jpg");
-  padding-bottom: 452px;
+  padding-bottom: 475px;
 }
 
 .criteria {
