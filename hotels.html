@@ -12,19 +12,19 @@
 <body>
   <div class="container">
     <header>
-      <nav>
+      <nav class="navigation">
         <ul>
-          <li class="navigation-item">
+          <li class="nav_stat">
             <a href="#">Информация</a>
           </li>
-          <li class="navigation-item">
+          <li class="nav_stat">
             <a href="#">Фото и видео</a>
           </li>
-          <li class="navigation-item">
+          <li class="nav_stat">
             <a href="#">Карта штата</a>
           </li>
-          <li class="navigation-item">
-            <a href="hotels.html">Гостиницы</a>
+          <li class="nav_active">
+            <a>Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -74,13 +74,13 @@
       <div class="sort">
         <span>Сортировка:</span>
         <ul>
-          <li>
+          <li class="sort_active">
             <a href="#">По цене</a>
           </li>
-          <li>
+          <li class="sort_stat">
             <a href="#">По типу</a>
           </li>
-          <li>
+          <li class="sort_stat">
             <a href="#">По рейтингу</a>
           </li>
         </ul>
@@ -98,10 +98,10 @@
     </section>
     <article class="hotel_block">
       <div class="hotel_img">
-        <img src="img/Amara_R_S.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort &amp; Spa">
+        <img src="img/amara_r_s.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort &amp; Spa">
       </div>
       <div class="hotel_descript">
-        <h1><a href="#">Amara Resort &amp; Spa</a></h1>
+        <h1><a href="#" class="hotel_name">Amara Resort &amp; Spa</a></h1>
         <div class="distribution more">
           <span>Гостиница</span>
           <a href="#">Подробнее</a>
@@ -118,10 +118,10 @@
     </article>
     <article class="hotel_block">
       <div class="hotel_img">
-        <img src="img/Desert_Q_I.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
+        <img src="img/desert_q_i.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
       </div>
       <div class="hotel_descript">
-        <h1><a href="#">Desert Quail Inn</a></h1>
+        <h1><a href="#" class="hotel_name">Desert Quail Inn</a></h1>
         <div class="distribution more">
           <span>Мотель</span>
           <a href="#">Подробнее</a>
@@ -138,10 +138,10 @@
     </article>
     <article class="hotel_block">
       <div class="hotel_img">
-        <img src="img/Villas_A_P_D.jpg" width="135" height="90" alt="Фото апартаментов Villas At Poco Diablo">
+        <img src="img/villas_a_p_d.jpg" width="135" height="90" alt="Фото апартаментов Villas At Poco Diablo">
       </div>
       <div class="hotel_descript">
-        <h1><a href="#">Villas At Poco Diablo</a></h1>
+        <h1><a href="#" class="hotel_name">Villas At Poco Diablo</a></h1>
         <div class="distribution more">
           <span>Апартаменты</span>
           <a href="#">Подробнее</a>
@@ -156,7 +156,7 @@
         <span>Рейтинг: 9.2</span>
       </div>
     </article>
-    <footer>
+    <footer class="footer_hotels">
       <div class="footer_block">
         <a href="#">#VisitSedona</a>
       </div>
