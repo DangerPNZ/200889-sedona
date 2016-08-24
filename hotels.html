@@ -35,34 +35,34 @@
       </div>
     </header>
     <section class="criteria">
-      <form action="#">
+      <form action="#" method="post">
         <div class="select_items">
           <h2>Инфраструктура:</h2>
           <label>
-            <input type="checkbox" checked>Бассейн
+            <input type="checkbox" name="pool" checked>Бассейн
           </label>
           <label>
-            <input type="checkbox">Парковка
+            <input type="checkbox" name="parking">Парковка
           </label>
           <label>
-            <input type="checkbox">Wi-Fi
+            <input type="checkbox" name="wi-fi">Wi-Fi
           </label>
         </div>
         <div class="select_items">
           <h2>Тип жилья:</h2>
           <label>
-            <input type="checkbox" checked>Гостиница
+            <input type="checkbox" name="hotel" checked>Гостиница
           </label>
           <label>
-            <input type="checkbox" checked>Мотель
+            <input type="checkbox" name="motel" checked>Мотель
           </label>
           <label>
-            <input type="checkbox" checked>Апартаменты
+            <input type="checkbox" name="apartments" checked>Апартаменты
           </label>
         </div>
         <div class="cost">
           <h2>Стоимость в сутки (Р):</h2>
-          <input type="range">
+          <input type="range" name="cost_max">
           <input type="submit" value="Показать">
         </div>
       </form>
@@ -87,11 +87,11 @@
       </div>
       <div class="scrolling">
         <ul>
-          <li class="scroll_arrow">
-            <a href="#"><img src="#" alt="Вверх"></a>
+          <li>
+            <a href="#" class="icon-up-dir"></a>
           </li>
-          <li class="scroll_arrow">
-            <a href="#"><img src="#" alt="Вниз"></a>
+          <li>
+            <a href="#" class="icon-down-dir"></a>
           </li>
         </ul>
       </div>
@@ -160,16 +160,15 @@
       <div class="footer_block">
         <a href="#">#VisitSedona</a>
       </div>
-      <div class="footer_block">
-        <a href="#"><img src="#" alt="Twitter">
-        </a>
-        <a href="#"><img src="#" alt="Facebook">
-        </a>
-        <a href="#"><img src="#" alt="Youtube">
-        </a>
+      <div class="footer_block social">
+        <a href="#" class="icon-twitter"></a>
+        <a href="#" class="icon-facebook"></a>
+        <a href="#" class="icon-youtube"></a>
       </div>
       <div class="footer_block">
-        <a href="#">Website by<img src="#" alt="HTML Academy"></a>
+        <a href="#">Website by
+          <span></span>
+        </a>
       </div>
     </footer>
   </div>
