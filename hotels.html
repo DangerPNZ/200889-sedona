@@ -38,33 +38,37 @@
       <form action="#" method="post">
         <div class="select_items">
           <h2>Инфраструктура:</h2>
-          <label>
-            <input type="checkbox" name="pool" checked>Бассейн
-          </label>
-          <label>
-            <input type="checkbox" name="parking">Парковка
-          </label>
-          <label>
-            <input type="checkbox" name="wi-fi">Wi-Fi
-          </label>
+            <input type="checkbox" id="pool" name="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" id="parking" name="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" id="wi-fi" name="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
         </div>
         <div class="select_items">
           <h2>Тип жилья:</h2>
-          <label>
-            <input type="checkbox" name="hotel" checked>Гостиница
-          </label>
-          <label>
-            <input type="checkbox" name="motel" checked>Мотель
-          </label>
-          <label>
-            <input type="checkbox" name="apartments" checked>Апартаменты
-          </label>
+            <input type="checkbox" id="hotel" name="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" id="motel" name="motel" checked>
+            <label for="motel">Мотель</label>
+            <input type="checkbox" id="apartments" name="apartments" checked>
+            <label for="apartments">Апартаменты</label>
         </div>
-        <div class="cost">
-          <h2>Стоимость в сутки (Р):</h2>
-          <input type="range" name="cost_max">
-          <input type="submit" value="Показать">
+        <div class="filter_range">
+      <div class="filter_range_title"><h2>Стоимость в сутки (р):</h2></div>
+      <div class="price_controls">
+        <label class="min_price">от <input type="text" name="min_price" value="0"></label>
+        <label class="max_price">до <input type="text" name="max_price" value="3000"></label>
+      </div>
+      <div class="range_controls">
+        <div class="scale">
+          <div class="bar"></div>
         </div>
+        <div class="range_toggle range_toggle_min"></div>
+        <div class="range_toggle range_toggle_max"></div>
+      </div>
+      <button class="btn_transparent" type="submit">Показать</button>
+    </div>
       </form>
     </section>
     <section class="sorting">
@@ -112,8 +116,13 @@
         </div>
       </div>
       <div class="rating">
-        <img src="#" alt="star">
-        <span>Рейтинг: 8.5</span>
+        <div class="star_rating">
+          <span class="icon-star"></span>
+          <span class="icon-star"></span>
+          <span class="icon-star"></span>
+          <span class="icon-star"></span>
+        </div>
+        <span class="points">Рейтинг: 8.5</span>
       </div>
     </article>
     <article class="hotel_block">
@@ -132,8 +141,11 @@
         </div>
       </div>
       <div class="rating">
-        <img src="#" alt="star">
-        <span>Рейтинг: 8.9</span>
+        <div class="star_rating">
+          <span class="icon-star"></span>
+          <span class="icon-star"></span>
+        </div>
+        <span class="points">Рейтинг: 8.9</span>
       </div>
     </article>
     <article class="hotel_block">
@@ -152,8 +164,12 @@
         </div>
       </div>
       <div class="rating">
-        <img src="#" alt="star">
-        <span>Рейтинг: 9.2</span>
+        <div class="star_rating">
+          <span class="icon-star"></span>
+          <span class="icon-star"></span>
+          <span class="icon-star"></span>
+        </div>
+        <span class="points">Рейтинг: 9.2</span>
       </div>
     </article>
     <footer class="footer_hotels">
@@ -166,13 +182,10 @@
         <a href="#" class="icon-youtube"></a>
       </div>
       <div class="footer_block">
-        <a href="#">Website by
-          <span></span>
-        </a>
+        <a href="#" class="website_by">Website by</a>
       </div>
     </footer>
   </div>
 
 </body>
-
 </html>
