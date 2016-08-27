@@ -695,17 +695,14 @@ input[type="checkbox"]:disabled + label::before {
 }
 .price_controls .min_price {
   width: 90px;
-}
-.price_controls .max_price {
-  width: 90px;
-}
-.min_price {
   padding-left: 65px;
 }
-.max_price {
-  margin-left: 60px;
-  padding-left: 64px;
+.price_controls .max_price {
+  margin-left: 65px;
+  padding-left: 56px;
+  width: 90px;
 }
+
 .price_controls input {
   width: 67px;
   height: 30px;
