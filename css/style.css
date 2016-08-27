@@ -698,15 +698,13 @@ input[type="checkbox"]:disabled + label::before {
   padding-left: 65px;
 }
 .price_controls .max_price {
-  margin-left: 65px;
-  padding-left: 56px;
   width: 90px;
+  padding-left: 120px;
 }
 
 .price_controls input {
   width: 67px;
   height: 30px;
-  margin: 0;
   margin-left: 5px;
   color: inherit;
   font: inherit;
