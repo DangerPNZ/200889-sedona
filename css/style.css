@@ -434,6 +434,11 @@ ul {
   padding-top: 30px;
   padding-bottom: 28px;
 }
+.map {
+  position: relative;
+  background-image: url("../img/map.jpg");
+  padding-bottom: 590px;
+}
 .map form {
   position: absolute;
   top: 0;
@@ -480,7 +485,7 @@ input[type="text"]:focus {
   background: #81b3d2;
   width: 458px;
   padding: 17px 0 15px 0;
-  margin: 54px 0 -1px 0;
+  margin: 26px 0 -1px 0;
 }
 .btn_find:hover {
   background: #669ec0;
@@ -518,7 +523,7 @@ input[type="text"]:focus {
 }
 .short2 {
   position: relative;
-  margin-top: -38px;
+  margin-top: -66px;
   z-index: 10;
 }
 .map .short {
@@ -527,78 +532,57 @@ input[type="text"]:focus {
   margin-left: 28px;
   z-index: 10;
 }
-.minus1::after {
-  content: "\e802";
-  display: block;
-  position: absolute;
-  left: 114px;
-  top: 7px;
+.short1 .icon-minus {
+  position:relative;
+  left: 104px;
+  bottom: 32px;
+  background: none;
+  border: none;
+  outline: none;
   z-index: 30;
-  font-family: "symbols-sedona";
-  font-size: 15px;
   color: #a9a9a9;
 }
-.minus1:hover::after {
-  color: #000000;
-}
-.minus1:active::after {
-  color: #81b3d2;
-}
-.minus2::after {
-  content: "\e802";
-  display: block;
-  position: absolute;
-  left: 82px;
-  top: 7px;
+.short1 .icon-plus {
+  position:relative;
+  left: 144px;
+  bottom: 32px;
+  background: none;
+  border: none;
+  outline: none;
   z-index: 30;
-  font-family: "symbols-sedona";
-  font-size: 15px;
   color: #a9a9a9;
 }
-.minus2:hover::after {
-  color: #000000;
-}
-.minus2:active::after {
-  color: #81b3d2;
-}
-.plus1::before {
-  content: "\e801";
-  display: block;
-  position: absolute;
-  left: 189px;
-  top: 6px;
+.short2 .icon-minus {
+  position:relative;
+  left: 72px;
+  bottom: 32px;
+  background: none;
+  border: none;
+  outline: none;
   z-index: 30;
-  font-family: "symbols-sedona";
-  font-size: 15px;
   color: #a9a9a9;
 }
-.plus1:hover::before {
-  color: #000000;
-}
-.plus1:active::before {
-  color: #81b3d2;
-}
-.plus2::before {
-  content: "\e801";
-  display: block;
-  position: absolute;
-  left: 157px;
-  top: 6px;
+.short2 .icon-plus {
+  position:relative;
+  left: 112px;
+  bottom: 32px;
+  background: none;
+  border: none;
+  outline: none;
   z-index: 30;
-  font-family: "symbols-sedona";
-  font-size: 15px;
   color: #a9a9a9;
 }
-.plus2:hover::before {
+.icon-minus:hover {
   color: #000000;
 }
-.plus2:active::before {
+.icon-minus:active {
   color: #81b3d2;
 }
-.map {
-  position: relative;
-  background-image: url("../img/map.jpg");
-  padding-bottom: 590px;
+.icon-plus:hover {
+  color: #000000;
+}
+.icon-plus:active {
+  color: #81b3d2;
 }
 .criteria {
   background-color: #4178a1;
