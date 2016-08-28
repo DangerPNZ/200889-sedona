@@ -674,20 +674,18 @@ input[type="checkbox"]:disabled + label::before {
   display: flex;
   font-size: 14px;
   line-height: 30px;
-  padding-left: 50px;
-  padding-right: 1px;
+  padding-left: 63px;
   vertical-align: middle;
   cursor: pointer;
 }
 .price_controls #min_value {
+  width: 64px;
+  padding-left: 1px;
+}
+.price_controls #max_value {
   width: 70px;
   padding-left: 10px;
 }
-.price_controls #max_value {
-  width: 90px;
-  padding-left: 10px;
-}
-
 .price_controls input {
   width: 67px;
   height: 30px;
