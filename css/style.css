@@ -439,6 +439,12 @@ ul {
   background-image: url("../img/map.jpg");
   padding-bottom: 589px;
 }
+.form_hidden {
+  display: none;
+}
+.form_hidden_show {
+  display: flex;
+}
 .map form {
   position: absolute;
   top: 0;
@@ -516,29 +522,35 @@ ul {
 .calendar:active::before {
   color: #81b3d2;
 }
-.short1 {
+.short_block {
   position: relative;
-  margin-right: 231px;
-  z-index: 10;
-  flex-wrap: nowrap;
-  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  width: 568px;
+}
+.short1 {
+
+margin-right: 49px;
+width: 217px;
+z-index: 10;
+flex-wrap: nowrap;
 }
 .short2 {
-  position: relative;
-  margin-top: -38px;
-  z-index: 10;
-  flex-wrap: nowrap;
-  max-width: 50%;
+
+width: 181px;
+z-index: 10;
+flex-wrap: nowrap;
 }
 .map .short {
+  position: relative;
   padding-left: 56px;
   width: 115px;
   margin-left: 28px;
   z-index: 10;
 }
-.icon-minus {
+.short1 .icon-minus {
   position: absolute;
-  left: 104px;
+  left: 226px;
   top: 6px;
   background: none;
   border: none;
@@ -548,7 +560,7 @@ ul {
 }
 .icon-plus {
   position: absolute;
-  left: 181px;
+  left: 302px;
   top: 6px;
   background: none;
   border: none;
@@ -558,7 +570,7 @@ ul {
 }
 .short2 .icon-minus {
   position: absolute;
-  left: 72px;
+  left: 459px;
   top: 6px;
   background: none;
   border: none;
@@ -568,7 +580,7 @@ ul {
 }
 .short2 .icon-plus {
   position: absolute;
-  left: 149px;
+  left: 535px;
   top: 6px;
   background: none;
   border: none;

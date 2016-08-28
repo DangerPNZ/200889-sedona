@@ -101,35 +101,39 @@
       <a href="#" class="link_for_form">Поиск гостиницы в Седоне</a>
     </section>
     <section class="map">
+      <div class="form_hidden">
       <form action="#" method="post">
         <div class="long">
-          <label>Дата заезда: Дата заезда:
+          <label>Дата заезда:
             <input type="text" name="arrival_date" class="arrival_date" value="24 апреля 2016">
           </label>
           <span class="calendar"></span>
         </div>
         <div class="long">
-          <label>Дата выезда: Дата заезда:
+          <label>Дата выезда:
             <input type="text" name="date_of_departure" class="date_of_departure" value="4 июля 2016">
           </label>
           <span class="calendar"></span>
         </div>
+        <div class="short_block">
         <div class="short1">
-          <label>Взрослые: Дата заезда:
+          <label>Взрослые:
             <input type="text" class="short" name="adults" value="2">
           </label>
           <button type="button" class="icon-minus"></button>
           <button type="button" class="icon-plus"></button>
         </div>
         <div class="short2">
-          <label>Дети: Дата заезда:
+          <label>Дети:
             <input type="text" class="short" name="children" value="0">
           </label>
           <button type="button" class="icon-minus"></button>
           <button type="button" class="icon-plus"></button>
         </div>
+      </div>
         <button type="submit" class=btn_find>Найти</button>
       </form>
+    </div>
     </section>
     <footer class="footer_index">
       <div class="footer_block">
@@ -147,8 +151,11 @@
   </div>
 <script>
 var link_search = document.querySelector(".link_for_form");
-link_search.addEventListener("click", function(){
-  console.log("Произошёл клик по ссылке Поиск отелей")
+link_search.addEventListener("click", function(event){
+  event.preventDefault();
+  console.log("Произошёл клик по ссылке Поиск отелей");
+  var form = document.querySelector(".form_hidden");
+  form.classList.add("form_hidden_show");
 });
 </script>
 </body>
