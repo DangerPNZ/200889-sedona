@@ -485,7 +485,7 @@ ul {
   background: #81b3d2;
   width: 458px;
   padding: 17px 0 15px 0;
-  margin: 26px 0 -1px 0;
+  margin: 54px 0 -1px 0;
 }
 .btn_find:hover {
   background: #669ec0;
@@ -520,11 +520,15 @@ ul {
   position: relative;
   margin-right: 231px;
   z-index: 10;
+  flex-wrap: nowrap;
+  max-width: 50%;
 }
 .short2 {
   position: relative;
-  margin-top: -66px;
+  margin-top: -38px;
   z-index: 10;
+  flex-wrap: nowrap;
+  max-width: 50%;
 }
 .map .short {
   padding-left: 56px;
@@ -532,20 +536,20 @@ ul {
   margin-left: 28px;
   z-index: 10;
 }
-.short1 .icon-minus {
-  position:relative;
+.icon-minus {
+  position: absolute;
   left: 104px;
-  bottom: 32px;
+  top: 6px;
   background: none;
   border: none;
   outline: none;
   z-index: 30;
   color: #a9a9a9;
 }
-.short1 .icon-plus {
-  position:relative;
-  left: 144px;
-  bottom: 32px;
+.icon-plus {
+  position: absolute;
+  left: 181px;
+  top: 6px;
   background: none;
   border: none;
   outline: none;
@@ -553,9 +557,9 @@ ul {
   color: #a9a9a9;
 }
 .short2 .icon-minus {
-  position:relative;
+  position: absolute;
   left: 72px;
-  bottom: 32px;
+  top: 6px;
   background: none;
   border: none;
   outline: none;
@@ -563,9 +567,9 @@ ul {
   color: #a9a9a9;
 }
 .short2 .icon-plus {
-  position:relative;
-  left: 112px;
-  bottom: 32px;
+  position: absolute;
+  left: 149px;
+  top: 6px;
   background: none;
   border: none;
   outline: none;

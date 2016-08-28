@@ -103,26 +103,26 @@
     <section class="map">
       <form action="#" method="post">
         <div class="long">
-          <label>Дата заезда:
+          <label>Дата заезда: Дата заезда:
             <input type="text" name="arrival_date" class="arrival_date" value="24 апреля 2016">
           </label>
           <span class="calendar"></span>
         </div>
         <div class="long">
-          <label>Дата выезда:
+          <label>Дата выезда: Дата заезда:
             <input type="text" name="date_of_departure" class="date_of_departure" value="4 июля 2016">
           </label>
           <span class="calendar"></span>
         </div>
         <div class="short1">
-          <label>Взрослые:
+          <label>Взрослые: Дата заезда:
             <input type="text" class="short" name="adults" value="2">
           </label>
           <button type="button" class="icon-minus"></button>
           <button type="button" class="icon-plus"></button>
         </div>
         <div class="short2">
-          <label>Дети:
+          <label>Дети: Дата заезда:
             <input type="text" class="short" name="children" value="0">
           </label>
           <button type="button" class="icon-minus"></button>
@@ -145,7 +145,11 @@
       </div>
     </footer>
   </div>
-
-
+<script>
+var link_search = document.querySelector(".link_for_form");
+link_search.addEventListener("click", function(){
+  console.log("Произошёл клик по ссылке Поиск отелей")
+});
+</script>
 </body>
 </html>
