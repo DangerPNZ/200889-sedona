@@ -646,6 +646,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 .filter_range_title h2 {
   padding-top: 12px;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -706,9 +707,11 @@ input[type="checkbox"]:disabled + label::before {
 .range_controls {
   position: relative;
   margin-bottom: 32px;
+  margin-left: 12px
 }
 .range_controls .scale {
   height: 2px;
+  width: 100%;
   background: rgba(255, 255, 255, 0.3);
 }
 .range_controls .bar {
@@ -719,19 +722,20 @@ input[type="checkbox"]:disabled + label::before {
 .range_toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+  box-sizing: content-box;
 }
 .range_toggle:hover {
   background: #1c4f80;
 }
 .range_toggle_min {
-  left: 0;
+  left: -2px;
 }
 .range_toggle_max {
   left: 80%;
