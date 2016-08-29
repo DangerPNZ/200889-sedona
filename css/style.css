@@ -197,8 +197,8 @@ ul {
   align-items: center;
   text-transform: uppercase;
   width: 400px;
-  margin-top: -7px;
-  margin-bottom: -6px;
+  margin-top: -6px;
+  margin-bottom: -3px;
 }
 .footer_block:first-child {
   font-size: 21px;
@@ -437,13 +437,28 @@ ul {
 .map {
   position: relative;
   background-image: url("../img/map.jpg");
-  padding-bottom: 589px;
+  background-position: 593px 100%;
 }
 .form_hidden {
   display: none;
 }
+@keyframes open_form {
+  0% {
+    transform: translateY(-2500px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .form_hidden_show {
   display: flex;
+  animation: open_form 1.0s;
 }
 .map form {
   position: absolute;
@@ -505,21 +520,22 @@ ul {
   z-index: 10;
   margin-bottom: 29px;
 }
-.calendar::before {
-  content: "\e800";
-  right: 8px;
+.icon-calendar {
+  right: -2px;
   top: 5px;
-  display: block;
   position: absolute;
   font-family: "symbols-sedona";
   font-size: 21px;
   color: #c2c2c2;
   z-index: 30;
+  background: none;
+  outline: none;
+  border: none;
 }
-.calendar:hover::before {
+.icon-calendar:hover {
   color: #000000;
 }
-.calendar:active::before {
+.icon-calendar:active {
   color: #81b3d2;
 }
 .short_block {
@@ -529,17 +545,15 @@ ul {
   width: 568px;
 }
 .short1 {
-
-margin-right: 49px;
-width: 217px;
-z-index: 10;
-flex-wrap: nowrap;
+  margin-right: 49px;
+  width: 217px;
+  z-index: 10;
+  flex-wrap: nowrap;
 }
 .short2 {
-
-width: 181px;
-z-index: 10;
-flex-wrap: nowrap;
+  width: 181px;
+  z-index: 10;
+  flex-wrap: nowrap;
 }
 .map .short {
   position: relative;
@@ -604,7 +618,7 @@ flex-wrap: nowrap;
   background-color: #4178a1;
   background-image: url("../img/hotel_filter_back.png");
   background-position: 50% 16%;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
 }
 .select_items {
   width: 256px;
@@ -644,7 +658,7 @@ input[type="checkbox"]+ label::before {
 input[type="checkbox"]:checked+ label::before {
   content: "\2611";
 }
-input[type="checkbox"]:disabled + label::before {
+input[type="checkbox"]:disabled+ label::before {
   content: "\2610";
   color: #6a6a6a;
 }
@@ -699,10 +713,12 @@ input[type="checkbox"]:disabled + label::before {
   width: 64px;
   padding-left: 1px;
 }
+/* стилизация по id применена согласно разрешённого исключения для нестандарнтной формы */
 .price_controls #max_value {
   width: 70px;
   padding-left: 10px;
 }
+/* стилизация по id применена согласно разрешённого исключения для нестандарнтной формы */
 .price_controls input {
   width: 67px;
   height: 30px;

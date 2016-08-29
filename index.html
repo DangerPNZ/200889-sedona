@@ -102,38 +102,40 @@
     </section>
     <section class="map">
       <div class="form_hidden">
-      <form action="#" method="post">
-        <div class="long">
-          <label>Дата заезда:
-            <input type="text" name="arrival_date" class="arrival_date" value="24 апреля 2016">
-          </label>
-          <span class="calendar"></span>
-        </div>
-        <div class="long">
-          <label>Дата выезда:
-            <input type="text" name="date_of_departure" class="date_of_departure" value="4 июля 2016">
-          </label>
-          <span class="calendar"></span>
-        </div>
-        <div class="short_block">
-        <div class="short1">
-          <label>Взрослые:
-            <input type="text" class="short" name="adults" value="2">
-          </label>
-          <button type="button" class="icon-minus"></button>
-          <button type="button" class="icon-plus"></button>
-        </div>
-        <div class="short2">
-          <label>Дети:
-            <input type="text" class="short" name="children" value="0">
-          </label>
-          <button type="button" class="icon-minus"></button>
-          <button type="button" class="icon-plus"></button>
-        </div>
+        <form action="#" method="post">
+          <div class="long">
+            <label>Дата заезда:
+              <input type="text" name="arrival_date" class="arrival_date" value="24 апреля 2016">
+            </label>
+            <button type="button" class="icon-calendar"></button>
+          </div>
+          <div class="long">
+            <label>Дата выезда:
+              <input type="text" name="date_of_departure" class="date_of_departure" value="4 июля 2016">
+            </label>
+            <button type="button" class="icon-calendar"></button>
+          </div>
+          <div class="short_block">
+            <div class="short1">
+              <label>Взрослые:
+                <input type="text" class="short" name="adults" value="2">
+              </label>
+              <button type="button" class="icon-minus"></button>
+              <button type="button" class="icon-plus"></button>
+            </div>
+            <div class="short2">
+              <label>Дети:
+                <input type="text" class="short" name="children" value="0">
+              </label>
+              <button type="button" class="icon-minus"></button>
+              <button type="button" class="icon-plus"></button>
+            </div>
+          </div>
+          <button type="submit" class=btn_find>Найти</button>
+        </form>
       </div>
-        <button type="submit" class=btn_find>Найти</button>
-      </form>
-    </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124591.647373541!2d-111.85887551714437!3d34.85570150632947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472445442034"
+          width="1200" height="593" style="border:0" allowfullscreen></iframe>
     </section>
     <footer class="footer_index">
       <div class="footer_block">
@@ -149,14 +151,23 @@
       </div>
     </footer>
   </div>
-<script>
-var link_search = document.querySelector(".link_for_form");
-link_search.addEventListener("click", function(event){
-  event.preventDefault();
-  console.log("Произошёл клик по ссылке Поиск отелей");
-  var form = document.querySelector(".form_hidden");
-  form.classList.add("form_hidden_show");
-});
-</script>
+  <script>
+    var link_search = document.querySelector(".link_for_form");
+    var form = document.querySelector(".form_hidden");
+
+    link_search.addEventListener("click", function(event) {
+      event.preventDefault();
+      console.log("Произошёл клик по ссылке Поиск отелей");
+      form.classList.add("form_hidden_show");
+    });
+    window.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        if (form.classList.contains("form_hidden_show")) {
+          form.classList.remove("form_hidden_show");
+        }
+      }
+    });
+  </script>
 </body>
+
 </html>
