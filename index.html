@@ -98,7 +98,7 @@
     <section class="search_for_hotels">
       <h3>Заинтересовались?</h3>
       <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в седоне</p>
-      <a href="#" class="link_for_form">Поиск гостиницы в Седоне</a>
+      <a href="form.html" class="link_for_form">Поиск гостиницы в Седоне</a>
     </section>
     <section class="map">
       <div class="form_hidden">
@@ -151,23 +151,7 @@
       </div>
     </footer>
   </div>
-  <script>
-    var link_search = document.querySelector(".link_for_form");
-    var form = document.querySelector(".form_hidden");
-
-    link_search.addEventListener("click", function(event) {
-      event.preventDefault();
-      console.log("Произошёл клик по ссылке Поиск отелей");
-      form.classList.add("form_hidden_show");
-    });
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (form.classList.contains("form_hidden_show")) {
-          form.classList.remove("form_hidden_show");
-        }
-      }
-    });
-  </script>
+<script src="js/script_min.js"></script>
 </body>
 
 </html>
