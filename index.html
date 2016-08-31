@@ -104,29 +104,25 @@
       <div class="form_hidden">
         <form action="#" method="post">
           <div class="long">
-            <label>Дата заезда:
-              <input type="text" name="arrival_date" class="arrival_date" value="24 апреля 2016">
-            </label>
+            <label for="arrival" class="label_arrival">Дата заезда:</label>
+            <input type="text" name="arrival_date" id="arrival" class="arrival_date" value="24 апреля 2016">
             <button type="button" class="icon-calendar"></button>
           </div>
           <div class="long">
-            <label>Дата выезда:
-              <input type="text" name="date_of_departure" class="date_of_departure" value="4 июля 2016">
-            </label>
+            <label for="departure" class="label_departure">Дата выезда:</label>
+            <input type="text" name="date_of_departure" id="departure" class="date_of_departure" value="4 июля 2016">
             <button type="button" class="icon-calendar"></button>
           </div>
           <div class="short_block">
             <div class="short1">
-              <label>Взрослые:
-                <input type="text" class="short" name="adults" value="2">
-              </label>
+              <label for="adults" class="label_adults">Взрослые:</label>
+              <input type="text" class="short_adults" name="adults" id="adults" value="2">
               <button type="button" class="icon-minus"></button>
               <button type="button" class="icon-plus"></button>
             </div>
             <div class="short2">
-              <label>Дети:
-                <input type="text" class="short" name="children" value="0">
-              </label>
+              <label for="children" class="label_children">Дети:</label>
+              <input type="text" class="short_children" name="children" id="children" value="0">
               <button type="button" class="icon-minus"></button>
               <button type="button" class="icon-plus"></button>
             </div>
